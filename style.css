@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.container-one{
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    /* background-color: aqua; */
+    background: linear-gradient(rgb(109, 5, 109),rgb(102, 0, 102),rgb(19, 18, 18));
+    right: 3rem;
+    position: relative;
+    top: -15rem;
+    animation: move1 10s linear infinite ;
+}
+@keyframes  move1{
+    0%{
+        transform:translate(0rem)  ;
+
+    }
+    25%{
+        transform:translate(-10px,-10px);
+
+    }
+    75%{
+        transform: translate(10px, 10px);
+    }
+    100%{
+        transform:translate(0rem);
+
+    }
+}
+.container-two{
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    /* background-color: aqua; */
+    background: linear-gradient(rgb(109, 5, 109),rgb(102, 0, 102),rgb(19, 18, 18));
+    left: 44rem;
+    position: relative;
+    top: -21rem;
+    animation: move2 10s linear infinite;
+}
+@keyframes move2 {
+    0%{
+        transform: translate(0rem);
+
+    }
+    25%{
+        transform: translate(10px,10px);
+
+    }
+    75%{
+        transform: translate(-10px,-10px);
+
+    }
+    100%{
+        transform: translate(0rem);
+
+    }
+}
+.container{
+    width: 30%;
+    height: 63vh;
+    /* border: 2px solid red; */
+    position: relative;
+    top: -78rem;
+    left: 30rem;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px purple;
+}
+.data{
+    text-align: center;
+    color: wheat;
+    position: relative;
+    top: 3rem;   
+}
+.img{
+    /* border: 2px solid red; */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 9rem;
+    padding: 25px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 20px purple;
+}
+input{
+    width: 300px;
+    padding: 4px;
+    margin: 0.7em;
+    position: relative;
+    top: 20px;
+    background: none;
+    border:none;
+    border-bottom: 2px solid purple;
+    border-radius: 10px;
+    color: aliceblue;
+    cursor: pointer;
+}
+p{
+    position: relative;
+    top: 30px;
+}
+button{
+    position: relative;
+    top: 45px;
+}
+::placeholder{
+    color: aliceblue;
+    position: relative;
+    left: 10px;
+}
+#user-one{
+  position: relative;
+  top: 25px;
+}
+#user-two{
+    position: relative;
+    top: 25px;
+}
+#sec-img{
+  font-size: 50px;
+} 
+#para-two{
+    position: relative;
+    top: 10px;
+    left: 100px;
+}
+#para-one{
+    position: relative;
+    top: 27px;
+    right: 90px;
+}
+button{
+    padding: 10px;
+    width: 50%;
+    border-radius: 20px;
+    border: none;
+    background: none;
+    border: 2px solid purple;
+    color: white;
+    transition: 0.2s ease-in-out;
+
+}
+button:active{
+    transform: scale(0.95);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+
+
+}
+button:hover{
+    cursor: pointer;
+    background-color: purple;
+    transition: 0.2s ease-in-out;
+    color: wheat;
+}
+@media (max-width:1024px) {
+    .container-one,.container-two{
+        width: 500px;
+        height: 70rem;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        position: relative;
+        right: 10rem;
+        top: -2rem;
+
+    }
+    
+    body{
+        overflow-y: hidden;
+        overflow-x: hidden;
+
+
+    }   
+    .container{
+        width: 50%;
+        top: -60rem;
+        left: 25%;
+    }
+}
+@media (max-width:786px) {
+    .container-one,.container-two{
+        width: 400px;
+        height: 400px;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+   
+    body{
+        overflow-y: hidden;
+        overflow-x: hidden;
+
+
+    }
+    .container{
+        width: 70%;
+        top: -50rem;
+        left: 15%;
+        height: 60vh;
+
+    }
+    input{
+        width: 60%;
+    }
+    #para-one,#para-two{
+        margin: 0;
+        text-align: center;
+    }
+}
+@media (max-width: 480px) {
+    .container-one,.container-two{
+        /* display: none; */
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    body{
+        overflow-y: hidden;
+        overflow-x: hidden;
+
+
+    }
+      .container {
+        width: 90%;
+        top: -40rem;
+        left: 5%;
+        height: 55vh;
+    }
+
+    .img {
+        width: 80px;
+        height: 80px;
+        padding: 15px;
+    }
+
+    button {
+        width: 80%;
+    }
+}
